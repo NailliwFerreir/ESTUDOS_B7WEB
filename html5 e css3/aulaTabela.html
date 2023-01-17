@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Tudo Html</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Página de exemplos html e css</h1>
+
+    <h2>Listas</h2>
+
+    <h3>Lista não ordenada ( para a tag "ul" temos como alterar no css a decoração da lista)</h3>
+    <ul>
+        <ul style="list-style-type:disc ;" >
+            <li>Chá (list-style-type:disc(padrão) ;)</li>
+        </ul>
+        <ul style="list-style-type:circle ;" >
+            
+            <li>Leite (list-style-type:circle ;) </li>
+        </ul>
+        <ul style="list-style-type:square ;">
+            <li>Café (list-style-type:square ;)</li>
+        </ul>
+    </ul>
+    <h3>Lista ordenada ( para a tag de "ol" temos o atributo "type")</h3>
+    <ol>
+        <ol type="1">
+            <li>Chá (type="1")</li>
+        </ol>
+        <ol type="A">
+            <li>Leite (type="A" ou "a" também tem para minusculo)</li>
+        </ol>
+        <ol type="I">
+            <li>Café (type="I")</li>
+        </ol>
+    </ol>
+
+
+    <br><br><h2>Tabelas</h2>
+    <!--Tabelas no html -->
+    <table><!--thead somente diz que é o cabeçalho da tabela p o navegador porem ajuda a no caso de usar a tabela para impressões repetir o cabeçalho no caso de uma tabela muito grande-->
+        <thead>
+            <tr>
+                <th>Item 1</th>
+                <th>Item 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <p>
+        <h4> Somente preenchendo um espaço </h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, nobis maxime nisi delectus iste quas magnam ipsum saepe ut nulla voluptatum! Aspernatur, iusto assumenda natus minus ut ratione molestiae provident?
+        <br><br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, nulla vero? Labore quos distinctio aspernatur facere pariatur excepturi molestiae, sint iste, ipsam alias, veritatis cumque tempora ab minima eum beatae!
+        <br><br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, neque, quasi minima exercitationem expedita rerum dicta provident, magni tempora commodi eveniet delectus omnis ipsam incidunt fuga iure perspiciatis quae cum.
+    </p><br><br>
+    
+    <h2>Formulários</h2>
+
+    <h3><br>Área de cadastro</h3>
+    <form action="/para onde vai" method="post ou qualquer outro metodo">
+        Nome Completo*: <br>
+        <input type="text" placeholder="Digite seu nome"><br>
+        Informe uma senha*: <br>
+        <input type="password" placeholder="Digite uma senha"><br>
+        Digite seu e-mail: <br>
+        <input type="email" name="" id="" placeholder="exemplo@gmail.com"><br>
+        Escolha uma das opções: <br>
+        <input type="radio" name="sexo" id="mas">Masculino <br>
+        <input type="radio" name="sexo" id="fem">Feminino<br>  
+
+        <input type="checkbox" name="" id="">Aceite os Termos <br>
+        <input type="submit" value="Fazer cadastro"> 
+    </form>
+
+
+    <br><br>
+    Escolha sua fruta preferida
+    <form action="/">
+        <select name="opcoes" id=""><!--Para poder selecionar varias opções é só adicionar o atributo multiple-->
+            <option value="">Banana</option>
+            <option value="" selected >Laranja</option>
+            <option value="">Manga</option>
+            <option value="">Morango</option>
+            <option value="">Pessego</option>
+            <option value="">Abacate</option>
+        </select>
+    </form>
+    <textarea name="" id="" cols="30" rows="5">Me diga sua melhor lembrança envolvendo esta fruta</textarea><br><!--o button pode ser dentro de um formulário mas fora tbm -->
+    <button>Enviar escolha</button>
+
+    <h3>Usando o Label</h3>
+    <h4>Quando voce usa o label para digitar aqle texto encima do input ele ifica melhor a interação entre as tag do formulário e as informações pedidas </h4>
+    <form action="">
+        <!--referenciar o for com o mesmo id da tag desejada-->
+        <label for="nome">Digite seu nome</label>
+        <input type="text" name="nome" id="nome"><br>
+        <!--vc pode tambem colocar tudo no mesmo label assim nao precisa do for e id-->
+        <label><input type="checkbox" name="checkbox"> Eu declaro que li e aceito os termos.</label><br><br>
+        <button>Fazer cadastro</button>
+    </form>
+    
+    <h4>Estilizando o formulário</h4>
+    <form action="/" method="get" class="formEstilo">
+        <label>Digite seu nome: <br><input type="text" class="digiteseunome"></label>
+
+        <label>
+            Escolha seu genêro:
+            <select name="sexo" id="sexo">
+            <option value="">Masculino</option>
+            <option value="">Feminino</option>
+            <option value="">Outros</option>
+            <option value="" selected>Não declarar</option>
+        </select></label>
+
+        <label>Selecione sua data de nascimento:<br><input type="date"></label>
+
+        <label>Fale um pouco sobre voce! <br><textarea name="texto" id="texto" cols="30" rows="5"></textarea></label>
+
+        <label><input type="checkbox" name="checkbox"> Eu declaro que li e aceito os <a href="/" target="_blank">termos</a>.</label>
+
+        <button class="enviardados">Enviar dados</button>
+    </form>
+</body>
+</html>
