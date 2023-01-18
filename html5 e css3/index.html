@@ -156,5 +156,34 @@
 
         <button class="enviardados">Enviar dados</button>
     </form>
+
+    <br><br>
+    <h3>Usando fieldset e legend e validação nativa</h3>
+    <p>Para a validação nativa adicione alguns atributos especiais como required, min-length, max-length... cada tag tem seus atributos e quando o atributo não satisfazer sua validação voce pode criar uma <strong>expressão regular</strong> dentro do atributo "pattern". </p>
+    <form action="naoexiste.html" method="get"  enctype="multipart/form-data">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>Primeiro nome: <br>
+                <input required type="text">
+            </label><br>
+            <label>Sobrenome: <br><input type="text">
+            </label><br>
+            <label>Foto do rosto: <br>
+                <input type="file" accept="image/*">
+            <label><br>
+            <!--voce pode filtrar os tipos de arquivos com o accept
+            **Quando usar um input type file se deve colocar na tag form o atributo enctype="multipart/form-data" isso converte o arquivo em bytes assim passando ele junto com as outras informações-->
+        </fieldset>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>Nome da empresa: <br>
+                <input type="text">
+            </label><br>
+            <label>Nome do cargo: <br>
+                <input type="text">
+            </label><br>
+        </fieldset>
+        <input type="submit" value="Cadastrar">
+    </form>
 </body>
 </html>

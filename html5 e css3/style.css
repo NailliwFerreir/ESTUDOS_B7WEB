@@ -57,3 +57,7 @@ input[type=text] {
 textarea{
     resize: none;/*assim o usuario não meche no tamamho do campo*/
 }
+fieldset {
+    background-color: #EEE;
+    width: min-content;
+}
