@@ -12,178 +12,353 @@
 </head>
 <body>
     <h1>Página de exemplos html e css</h1>
-
-    <h2>Listas</h2>
-
-    <h3>Lista não ordenada ( para a tag "ul" temos como alterar no css a decoração da lista)</h3>
-    <ul>
-        <ul style="list-style-type:disc ;" >
-            <li>Chá (list-style-type:disc(padrão) ;)</li>
+    <h2>Listas, tabelas e formulários</h2>
+    <section>
+        <h3>Listas</h3>
+        <h4>Lista não ordenada ( para a tag "ul" temos como alterar no css a decoração da lista)</h4>
+        <ul>
+            <ul style="list-style-type:disc ;" >
+                <li>Chá (list-style-type:disc(padrão) ;)</li>
+            </ul>
+            <ul style="list-style-type:circle ;" >
+        
+                <li>Leite (list-style-type:circle ;) </li>
+            </ul>
+            <ul style="list-style-type:square ;">
+                <li>Café (list-style-type:square ;)</li>
+            </ul>
         </ul>
-        <ul style="list-style-type:circle ;" >
-            
-            <li>Leite (list-style-type:circle ;) </li>
-        </ul>
-        <ul style="list-style-type:square ;">
-            <li>Café (list-style-type:square ;)</li>
-        </ul>
-    </ul>
-    <h3>Lista ordenada ( para a tag de "ol" temos o atributo "type")</h3>
-    <ol>
-        <ol type="1">
-            <li>Chá (type="1")</li>
+        <h3>Lista ordenada ( para a tag de "ol" temos o atributo "type")</h3>
+        <ol>
+            <ol type="1">
+                <li>Chá (type="1")</li>
+            </ol>
+            <ol type="A">
+                <li>Leite (type="A" ou "a" também tem para minusculo)</li>
+            </ol>
+            <ol type="I">
+                <li>Café (type="I")</li>
+            </ol>
         </ol>
-        <ol type="A">
-            <li>Leite (type="A" ou "a" também tem para minusculo)</li>
-        </ol>
-        <ol type="I">
-            <li>Café (type="I")</li>
-        </ol>
-    </ol>
-
-
-    <br><br><h2>Tabelas</h2>
-    <!--Tabelas no html -->
-    <table><!--thead somente diz que é o cabeçalho da tabela p o navegador porem ajuda a no caso de usar a tabela para impressões repetir o cabeçalho no caso de uma tabela muito grande-->
-        <thead>
-            <tr>
-                <th>Item 1</th>
-                <th>Item 2</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-            <tr>
-                <td>...</td>
-                <td>...</td>
-            </tr>
-            <tr>
-                <td>...</td>
-                <td>...</td>
-            </tr>
-            <tr>
-                <td>...</td>
-                <td>...</td>
-            </tr>
-            <tr>
-                <td>...</td>
-                <td>...</td>
-            </tr>
-            <tr>
-                <td>...</td>
-                <td>...</td>
-            </tr>
-            <tr>
-                <td>...</td>
-                <td>...</td>
-            </tr>
-        </tbody>
-    </table>
-
-
-    <p>
-        <h4> Somente preenchendo um espaço </h4>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, nobis maxime nisi delectus iste quas magnam ipsum saepe ut nulla voluptatum! Aspernatur, iusto assumenda natus minus ut ratione molestiae provident?
-        <br><br>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, nulla vero? Labore quos distinctio aspernatur facere pariatur excepturi molestiae, sint iste, ipsam alias, veritatis cumque tempora ab minima eum beatae!
-        <br><br>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, neque, quasi minima exercitationem expedita rerum dicta provident, magni tempora commodi eveniet delectus omnis ipsam incidunt fuga iure perspiciatis quae cum.
-    </p><br><br>
+    </section>
     
-    <h2>Formulários</h2>
-
-    <h3><br>Área de cadastro</h3>
-    <form action="/para onde vai" method="post ou qualquer outro metodo">
-        Nome Completo*: <br>
-        <input type="text" placeholder="Digite seu nome"><br>
-        Informe uma senha*: <br>
-        <input type="password" placeholder="Digite uma senha"><br>
-        Digite seu e-mail: <br>
-        <input type="email" name="" id="" placeholder="exemplo@gmail.com"><br>
-        Escolha uma das opções: <br>
-        <input type="radio" name="sexo" id="mas">Masculino <br>
-        <input type="radio" name="sexo" id="fem">Feminino<br>  
-
-        <input type="checkbox" name="" id="">Aceite os Termos <br>
-        <input type="submit" value="Fazer cadastro"> 
-    </form>
-
-
-    <br><br>
-    Escolha sua fruta preferida
-    <form action="/">
-        <select name="opcoes" id=""><!--Para poder selecionar varias opções é só adicionar o atributo multiple-->
-            <option value="">Banana</option>
-            <option value="" selected >Laranja</option>
-            <option value="">Manga</option>
-            <option value="">Morango</option>
-            <option value="">Pessego</option>
-            <option value="">Abacate</option>
-        </select>
-    </form>
-    <textarea name="" id="" cols="30" rows="5">Me diga sua melhor lembrança envolvendo esta fruta</textarea><br><!--o button pode ser dentro de um formulário mas fora tbm -->
-    <button>Enviar escolha</button>
-
-    <h3>Usando o Label</h3>
-    <h4>Quando voce usa o label para digitar aqle texto encima do input ele ifica melhor a interação entre as tag do formulário e as informações pedidas </h4>
-    <form action="">
-        <!--referenciar o for com o mesmo id da tag desejada-->
-        <label for="nome">Digite seu nome</label>
-        <input type="text" name="nome" id="nome"><br>
-        <!--vc pode tambem colocar tudo no mesmo label assim nao precisa do for e id-->
-        <label><input type="checkbox" name="checkbox"> Eu declaro que li e aceito os termos.</label><br><br>
-        <button>Fazer cadastro</button>
-    </form>
+    <section>
+        <h3>Tabelas</h3>
+        <!--Tabelas no html -->
+        <table><!--thead somente diz que é o cabeçalho da tabela p o navegador porem ajuda a no caso de usar a tabela para impressões repetir o cabeçalho no caso de uma tabela muito grande-->
+            <thead>
+                <tr>
+                    <th>Item 1</th>
+                    <th>Item 2</th>
+                </tr>
+            </thead>
+            <tbody>
+        
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h5> Somente preenchendo um espaço </h5>
+        
+        <p>    
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, nobis maxime nisi delectus iste quas magnam ipsum saepe ut nulla voluptatum! Aspernatur, iusto assumenda natus minus ut ratione molestiae provident?
+            <br><br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, nulla vero? Labore quos distinctio aspernatur facere pariatur excepturi molestiae, sint iste, ipsam alias, veritatis cumque tempora ab minima eum beatae!
+            <br><br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, neque, quasi minima exercitationem expedita rerum dicta provident, magni tempora commodi eveniet delectus omnis ipsam incidunt fuga iure perspiciatis quae cum.
+        </p>
+    </section>
     
-    <h4>Estilizando o formulário</h4>
-    <form action="/" method="get" class="formEstilo">
-        <label>Digite seu nome: <br><input type="text" class="digiteseunome"></label>
+    <section>
+        <h3>Formulários</h3>
+        <h4><br>Área de cadastro</h4>
+        <form action="/para onde vai" method="post ou qualquer outro metodo">
+            Nome Completo*: <br>
+            <input type="text" placeholder="Digite seu nome"><br>
+            Informe uma senha*: <br>
+            <input type="password" placeholder="Digite uma senha"><br>
+            Digite seu e-mail: <br>
+            <input type="email" name="" id="" placeholder="exemplo@gmail.com"><br>
+            Escolha uma das opções: <br>
+            <input type="radio" name="sexo" id="mas">Masculino <br>
+            <input type="radio" name="sexo" id="fem">Feminino<br>
+            <input type="checkbox" name="" id="">Aceite os Termos <br>
+            <input type="submit" value="Fazer cadastro">
+        </form>
+        <br><br>
+        Escolha sua fruta preferida
+        <form action="/">
+            <select name="opcoes" id=""><!--Para poder selecionar varias opções é só adicionar o atributo multiple-->
+                <option value="">Banana</option>
+                <option value="" selected >Laranja</option>
+                <option value="">Manga</option>
+                <option value="">Morango</option>
+                <option value="">Pessego</option>
+                <option value="">Abacate</option>
+            </select>
+        </form>
+        <textarea name="" id="" cols="30" rows="5">Me diga sua melhor lembrança envolvendo esta fruta</textarea><br><!--o button pode ser dentro de um formulário mas fora tbm -->
+        <button>Enviar escolha</button>
+        <h4>Usando o Label</h4>
+        <h5>Quando voce usa o label para digitar aqle texto encima do input ele ifica melhor a interação entre as tag do formulário e as informações pedidas </h5>
+        <form action="">
+            <!--referenciar o for com o mesmo id da tag desejada-->
+            <label for="nome">Digite seu nome</label>
+            <input type="text" name="nome" id="nome"><br>
+            <!--vc pode tambem colocar tudo no mesmo label assim nao precisa do for e id-->
+            <label><input type="checkbox" name="checkbox"> Eu declaro que li e aceito os termos.</label><br><br>
+            <button>Fazer cadastro</button>
+        </form>
+        
+        <h4>Estilizando o formulário</h4>
+        <form action="/" method="get" class="formEstilo">
+            <label>Digite seu nome: <br><input type="text" class="digiteseunome"></label>
+            <label>
+                Escolha seu genêro:
+                <select name="sexo" id="sexo">
+                <option value="">Masculino</option>
+                <option value="">Feminino</option>
+                <option value="">Outros</option>
+                <option value="" selected>Não declarar</option>
+            </select></label>
+            <label>Selecione sua data de nascimento:<br><input type="date"></label>
+            <label>Fale um pouco sobre voce! <br><textarea name="texto" id="texto" cols="30" rows="5"></textarea></label>
+            <label><input type="checkbox" name="checkbox"> Eu declaro que li e aceito os <a href="/" target="_blank">termos</a>.</label>
+            <button class="enviardados">Enviar dados</button>
+        </form>
+        <br><br>
+        <h3>Usando fieldset e legend e validação nativa</h3>
+        <p>Para a validação nativa adicione alguns atributos especiais como required, min-length, max-length... cada tag tem seus atributos e quando o atributo não satisfazer sua validação voce pode criar uma <strong>expressão regular</strong> dentro do atributo "pattern". </p>
+        <form action="naoexiste.html" method="get"  enctype="multipart/form-data">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label>Primeiro nome: <br>
+                    <input required type="text">
+                </label><br>
+                <label>Sobrenome: <br><input type="text">
+                </label><br>
+                <label>Foto do rosto: <br>
+                    <input type="file" accept="image/*">
+                <label><br>
+                <!--voce pode filtrar os tipos de arquivos com o accept
+                **Quando usar um input type file se deve colocar na tag form o atributo enctype="multipart/form-data" isso converte o arquivo em bytes assim passando ele junto com as outras informações-->
+            </fieldset>
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                <label>Nome da empresa: <br>
+                    <input type="text">
+                </label><br>
+                <label>Nome do cargo: <br>
+                    <input type="text">
+                </label><br>
+            </fieldset>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </section>
 
-        <label>
-            Escolha seu genêro:
-            <select name="sexo" id="sexo">
-            <option value="">Masculino</option>
-            <option value="">Feminino</option>
-            <option value="">Outros</option>
-            <option value="" selected>Não declarar</option>
-        </select></label>
+    <section>
+        <h2>Características da CSS</h2>
+        <h3>Unidades de medida</h3>
 
-        <label>Selecione sua data de nascimento:<br><input type="date"></label>
+        <h4>Absolutas:</h4>
 
-        <label>Fale um pouco sobre voce! <br><textarea name="texto" id="texto" cols="30" rows="5"></textarea></label>
+        <ul>
+            <li>pixels (px)</li>
+            <li>points (pt)</li>
+            <li>inch (in)</li>
+            <li>centímetros (cm)</li>
+            <li>milímetro (mm)</li>
 
-        <label><input type="checkbox" name="checkbox"> Eu declaro que li e aceito os <a href="/" target="_blank">termos</a>.</label>
+        </ul>
 
-        <button class="enviardados">Enviar dados</button>
-    </form>
+        <h4>Relativas: (efeito casccata)</h4>
 
-    <br><br>
-    <h3>Usando fieldset e legend e validação nativa</h3>
-    <p>Para a validação nativa adicione alguns atributos especiais como required, min-length, max-length... cada tag tem seus atributos e quando o atributo não satisfazer sua validação voce pode criar uma <strong>expressão regular</strong> dentro do atributo "pattern". </p>
-    <form action="naoexiste.html" method="get"  enctype="multipart/form-data">
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-            <label>Primeiro nome: <br>
-                <input required type="text">
-            </label><br>
-            <label>Sobrenome: <br><input type="text">
-            </label><br>
-            <label>Foto do rosto: <br>
-                <input type="file" accept="image/*">
-            <label><br>
-            <!--voce pode filtrar os tipos de arquivos com o accept
-            **Quando usar um input type file se deve colocar na tag form o atributo enctype="multipart/form-data" isso converte o arquivo em bytes assim passando ele junto com as outras informações-->
-        </fieldset>
-        <fieldset>
-            <legend>Dados Profissionais</legend>
-            <label>Nome da empresa: <br>
-                <input type="text">
-            </label><br>
-            <label>Nome do cargo: <br>
-                <input type="text">
-            </label><br>
-        </fieldset>
-        <input type="submit" value="Cadastrar">
-    </form>
+        <ul>
+            <li>em (sempre baseia no tamanho do font-size anterior)</li>
+            <li>rem (se refere ao primeiro elemento "root" ou seja a tag <strong>html</strong>)</li>
+            <li>porcentagem (0%)</li>
+            <li>ex (tamanho conforme a letra "x" da fonte)</li>
+            <li>ch (obs: só funciona em fontes monoespaçadas...que tem o mesmo espaço , baseia no tamanho da fonte)</li>
+        </ul>
+
+        <p>
+            <strong>Obs:</strong> O tamanho padrão do font-size do html é de 16px.
+        </p>
+    </section>
+
+    <section>
+        <h3>Viewport</h3>
+        <p>
+            Espaço disponível visível e usável para o usuário. <br>
+            vh = viewport height <br>
+            vw = viewport width <br>
+        </p>
+    </section>
+    <section>
+        <h3>Inherit</h3>
+        
+        <p>Forçar uma herança de algum item como uma fonte ou um tamanho.</p>
+    </section>
+    <section>
+        <h3>Cores</h3>
+        
+        <p>Podem serem aplicadas pelos nomes (white, black, gray), em exadecimal indo de 0 à 9 e de A à F(#FFF,#000,#CCC), pelos aspectos RGB que vão de 0 à 255 (rgb(255,255,255),rgb(0,0,0),rgb)(80,80,80)), HSL porcentagem das tonalidades das cores de 0% à 1000% (hsl(100%,100%,100%)) e também existe o currentColor que herda a cor do item pai. </p>
+    </section>
+
+    <section>
+        <h2>Responsividade</h2>
+        
+        <h3>Mobile First</h3>
+
+        <p>Desenhar o site no computador pensando no celular </p>
+
+        <h3>Imagens Responsivas</h3>
+
+        <picture>
+            <source media="(min-width: 650px)" srcset="https://wallpapercave.com/wp/q9csN71.jpg" width="300px">
+            <img src="../html5 e css3/image/Freda Book Image.jpg" alt="Guts" width="300px">
+        </picture>
+
+        <h4>
+            Propriedade "Object-fit"
+        </h4>
+        <h5>
+            Imagem original (vou deixar comentada)
+        </h5><!--
+        <img  class="Behelit" src="../html5 e css3/image/Freda Book Image(2).jpg" alt="Behelit">-->
+        <h5>Imagem com o "Object-fit: fill;" <br></h5>
+        <p>    
+            <strong>Obs: </strong>A imagem pode se destorcer para que caiba em determinado espaço.
+        </p>
+        <img  class="BehelitFill" src="../html5 e css3/image/Freda Book Image(2).jpg" alt="Behelit">
+
+        
+            <h5>Imagem com o "Object-fit: contain;" ou "scale-down"</h5>
+        <p>    
+            <strong>Obs: </strong>Diminui a imagem sem destocer-la até que caiba no espaço definido(o scale-down diminui tbm a qualidade).
+        </p>
+        <img  class="BehelitContain" src="../html5 e css3/image/Freda Book Image(2).jpg" alt="Behelit">
+
+        
+            <h5>Imagem com o "Object-fit: cover;" </h5>
+        <p>    
+            <strong>Obs: </strong>Ajusta o tamanhho e corta a imagem para manter a proporção, geralmente o corte centralizado.
+        </p>
+        <img  class="BehelitCover" src="../html5 e css3/image/Freda Book Image(2).jpg" alt="Behelit">
+
+       
+        <h5>Imagem com o "Object-fit: none;" <br></h5>
+        <p>
+            <strong>Obs: </strong>Não muda o tamanho da imagem somente corta na proporção definida.
+        </p>
+        <img  class="BehelitNone" src="../html5 e css3/image/Freda Book Image(2).jpg" alt="Behelit" >
+
+
+        <h3>CSS @media</h3>
+
+         <p>
+            O @media é acionado quando se satisfaz alguma condição imposta, e é assim que fazem o site ser mais responsivo...(tente mexer na proporção)
+
+            <div class="boxResponsiva"></div>
+         </p>
+         <h4>Mudar para impressões</h4>
+         <p>
+            @media only print { <br>
+                &nbsp&nbsp&nbsp&nbsp&nbspModificações... <br>
+            } <br> <br>
+
+            <strong>Obs:</strong> Essas modificações somente ocorrerão quando for imprimir a página.
+         </p>
+         
+         
+         <h4>Orientation</h4>
+
+         <p>
+            O @media não identifica a orientação do dispositivo, ele trabalha com as proporções da tela. <br> <br> Testar usando algum dispositivo e mudando a orientação
+         </p>
+         
+         <div class="organize">
+            <div class="caixa">Caixa 1</div>
+            <div class="caixa">Caixa 2</div>
+            <div class="caixa">Caixa 3</div>
+            <div class="caixa">Caixa 4</div>
+         </div>
+        <br>
+         <h4>Função var()</h4>
+
+         <p>
+            Mudar as cores em único local usando uma variável.
+            <br><br>
+            :root { <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp--nome : cor ;
+                 <br> }
+            <br>
+            <br>
+            div {
+                <br> 
+            &nbsp&nbsp&nbsp&nbsp&nbspbackgroud-color: var(--nome, cor alternativa);
+                <br>
+            }
+         </p>
+         <br><br>
+
+         <h4>Função var() em @media query</h4>
+
+         <p>
+            A idéia é que voce mude o valor da variavél no @media em vez de criar outras variaveis para fazer as alterações.
+         </p>
+        
+         <h4>Hack CSS: Altura relativa a largura</h4>
+
+         <p>
+            O truque é colocar o iframe dentro de duas div e aplicar a proporção nas divs. <br> exemplo:
+         </p>
+         <div class="video">
+             <div class="video-area">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/41SkwkfFr4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+         </div>
+         <h4>Função min e max</h4>
+
+         <p>
+            max vai pegar o maior valor, o min é o inverso vai pegar o menor valor.
+         </p>
+         <h5>max exemplo:</h5>
+         <img class="maxGoogleLogo" src="https://www.google.com.br/google.jpg" alt="google imagem">
+         <h5>min exemplo:</h5>
+         <img class="minGoogleLogo" src="https://www.google.com.br/google.jpg" alt="google imagem">
+
+
+         <h4>Função calc()</h4>
+
+         <p> calc (conta que voce quer fazer)
+            <br>exemplo: tamanho da tela menos 20px <br>
+            width: calc(100% - 20px);
+         </p>
+    </section>
+
 </body>
 </html>

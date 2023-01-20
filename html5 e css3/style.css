@@ -13,9 +13,12 @@ body {
 h1, h2 {
     color: rgb(0, 0, 0);
 }
-
+p {
+    max-width: 400px;
+    height: auto;
+}
 table {
-    width: 600px;
+    width: 300px;
     border: 2px solid rgb(157, 157, 157);
 }
 table thead {
@@ -60,4 +63,104 @@ textarea{
 fieldset {
     background-color: #EEE;
     width: min-content;
+}
+section {
+    margin-bottom: 100px;
+}
+.Behelit {
+    border: solid 1px black;
+}
+.BehelitFill {
+    border: solid 1px black;
+    width: 300px;
+    height: 300px;
+    object-fit: fill;
+}
+.BehelitContain {
+    border: solid 1px black;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+.BehelitCover {
+    border: solid 1px black;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.BehelitNone {
+    border: solid 1px black;
+    width: 300px;
+    height: 300px;
+    object-fit: none;
+}
+.boxResponsiva {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+@media (min-width:400px) and  (max-width:600px) {
+    .boxResponsiva {
+        width: 60px;
+        height: 60px;
+        background-color: rgb(43, 46, 226);
+    }
+}
+@media (min-width:1000px) {
+    .boxResponsiva {
+        width: 140px;
+        height: 140px;
+        background-color: rgb(43, 198, 226);
+    }
+}
+/*Mexendo com a orientação dos objetos*/
+.organize {
+    display: flex;
+}
+.caixa {
+    text-align: center;
+    color:white;
+    border: solid 1px rgb(60, 32, 84);
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(rgb(3, 3, 103),rgb(96, 29, 158)) ;
+}
+@media (orientation:landscape) {
+    .organize {
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    .organize {
+        flex-direction: column;
+    }
+}
+
+@media (aspect-ratio: 1/1) {
+/*tela quadrado perfeito*/
+}
+
+.video {
+    width: 400px;
+}
+.video-area {
+    position: relative;
+    height: 0px;
+    padding: 0px 0px 56.25%;
+}
+.video-area iframe {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+.maxGoogleLogo {
+    width: max(50%,300px);
+}
+
+.minGoogleLogo {
+    width: min(50%,300px);
 }
