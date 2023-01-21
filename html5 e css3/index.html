@@ -360,5 +360,91 @@
          </p>
     </section>
 
+    <section>
+        <h2>Semântica e CSS avançado</h2>
+
+        <h4>Tags header, nav e footer</h4>
+        <p>
+            Algumas tags não produzem efeitos visuais, porém elas ajudam aos mecanismos de busca à achar o que é relevante em sua página e também axilia à pessoas com problemas que possuem navegadores adaptados. A tag header tem como próposito indicar o conteúdo principal da página, a tag nav ajuda na acessibilidade definindo os tópicos do site, footer é o rodapé não produz efeitos visuais mas ajuda na identificação para navegadores com acessibilidade.
+        </p>
+
+        <h4>Tags section, article, aside e time</h4>
+
+        <p>
+            O section significa seção ou seja voce pode delimitar um espaço para algum conteúdo especifico da página.
+            O article é usado para identificar o texto principal da página como alguma postagem de um blog.
+            O aside é o inverso do article quer dizer um conteúdo secundário.
+            A tag time diz para o motor de busca que determinado texto tem haver com datas, e voce pode entregar para o motor de busca a data sem mostrar o usuário com o atributo da tag "datetime".
+        </p>
+
+        <h4>Compatibilidade com html5</h4>
+        <p>
+            Voce pode criar suas próprias tags e personalizá-las no css(não é muito recomendado).
+        </p>
+
+        <h4>Input</h4>
+
+        <p>
+            input de pesquisa <br> 
+            <input type="search" name="search" id="search">
+        </p>
+        <p>
+            input e-mail (o próprio html5 valida o e-mail) <br>
+            <input type="email" name="email" id="email">
+        </p>
+        <p>
+            input url <br>
+            <input type="url" name="" id="">
+        </p>
+        <p>
+            input tel (no celular somente o teclado numérico fica disponível)<br>
+            <input type="tel" name="" id="">
+        </p>
+        <p>
+            input range <br>
+            <input type="range" name="" id="" min="1" max="100">
+        </p>
+        <p>
+            input date <br>
+            <input type="date" name="" id="">
+        </p>
+        <p>
+            input color <br>
+            <input type="color" name="" id="">
+        </p>
+
+        <h4>Atributo data</h4>
+
+        <p>
+            Uma forma de guardar informações no próprio html. 
+            <div data-usuario="Willian">Oi, tudo bem :)</div>
+        </p>
+
+        <h4>Tag video</h4>
+
+        <p>Existem tres tipos suportados mp4, ogg ...
+            <video controls width="320px" height="200" src="">
+                <source src="" type="">
+            </video>
+        </p>
+        <h4>Tag audio</h4>
+        <p>
+            <audio controls autoplay loop muted preload="auto">
+                <source srct="" type="audio/mpeg,ogg,wav">
+            </audio>
+        </p>
+
+        <h4>Autofocus</h4>
+        <p>
+            É muito bom quando voce ja sabe o que o usuario vai fazer (fazer uma busca, preencher algum campo,etc).
+            <br>
+            <div style="background-color: darkgray; width: fit-content; padding: 10px;">
+                <input type="text" name="" id="" placeholder="Usuario" autofocus>
+                <input type="password" name="password" id="" placeholder="Senha">
+                <input type="submit" value="Entrar">
+            </div>
+        </p>
+    </section>
+
 </body>
 </html>
