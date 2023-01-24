@@ -1,0 +1,352 @@
+/*Para incluir fontes externas podemos usar o Google Fonts 
+só colocar o link no html e o font-family com aspas simples pois é algo externo a nossa maquina*/
+
+* {/* "*" para formatação aplicar à todos os elementos */
+    box-sizing: border-box;/*apenas dizendo que o tamanho da borda conta como tamanho do elemento*/
+    font-family: 'Rajdhani', sans-serif;
+    color: gray;
+}
+body {
+    margin: 0;
+    padding: 20px;
+}
+h1, h2 {
+    color: rgb(0, 0, 0);
+}
+p {
+    max-width: 400px;
+    height: auto;
+}
+table {
+    width: 300px;
+    border: 2px solid rgb(157, 157, 157);
+}
+table thead {
+    background-color: grey;
+}
+thead th {
+    color: white;
+}
+tbody td {
+    border-bottom:1px solid #CCC;
+    text-align: center;
+}
+
+tbody tr:hover {/* hover aciona quando o ponteiro do mouse passa sobre o elemento*/
+    background-color: #CCC;
+}
+label {
+    display: block;/*Por padrão a label vem com display :inline*/
+    margin-bottom: 12px;
+}
+.enviardados {
+    border: 1px solid grey;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: rgb(88, 88, 253);
+    color: white;
+}
+.enviardados:hover {
+    background-color: rgb(66, 66, 204);
+    padding: 3px 6px;
+}
+.digiteseunome {
+    width: 300px;
+    color: black;
+}
+input[type=text] {
+    outline:0;
+}
+textarea{
+    resize: none;/*assim o usuario não meche no tamamho do campo*/
+}
+fieldset {
+    background-color: #EEE;
+    width: min-content;
+}
+section {
+    margin-bottom: 100px;
+}
+.Behelit {
+    border: solid 1px black;
+}
+.BehelitFill {
+    border: solid 1px black;
+    width: 300px;
+    height: 300px;
+    object-fit: fill;
+}
+.BehelitContain {
+    border: solid 1px black;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+.BehelitCover {
+    border: solid 1px black;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.BehelitNone {
+    border: solid 1px black;
+    width: 300px;
+    height: 300px;
+    object-fit: none;
+}
+.boxResponsiva {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+@media (min-width:400px) and  (max-width:600px) {
+    .boxResponsiva {
+        width: 60px;
+        height: 60px;
+        background-color: rgb(43, 46, 226);
+    }
+}
+@media (min-width:1000px) {
+    .boxResponsiva {
+        width: 140px;
+        height: 140px;
+        background-color: rgb(43, 198, 226);
+    }
+}
+/*Mexendo com a orientação dos objetos*/
+.organize {
+    display: flex;
+}
+.caixa {
+    text-align: center;
+    color:white;
+    border: solid 1px rgb(60, 32, 84);
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(rgb(3, 3, 103),rgb(96, 29, 158)) ;
+}
+@media (orientation:landscape) {
+    .organize {
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    .organize {
+        flex-direction: column;
+    }
+}
+
+@media (aspect-ratio: 1/1) {
+/*tela quadrado perfeito*/
+}
+
+.video {
+    width: 400px;
+}
+.video-area {
+    position: relative;
+    height: 0px;
+    padding: 0px 0px 56.25%;
+}
+.video-area iframe {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+.maxGoogleLogo {
+    width: max(50%,300px);
+}
+
+.minGoogleLogo {
+    width: min(50%,300px);
+}
+.arredonde {
+    border-radius: 20px;
+    background-color: #CCC;
+    padding: 1px;
+    width: 200px;
+}
+.arredonde-conteudo {
+    color: black;
+    text-align: center;
+    text-shadow: 0px 0px 3px rgb(249, 4, 4);
+}
+
+.exemplo-degrade {
+    height: 100px;
+    width: 100px;
+    background: #CCC;
+    background: linear-gradient(-90deg,white, blue);
+   /* background: -moz-linear-gradient(white, blue);Daqui p baixo são proteções para funcionar em todos os navegadores
+    background: -o-linear-gradient(white, blue);
+   background: -webkit-linear-gradient(white,blue);*/
+}
+
+@keyframes animacao {
+    0%{
+        background:linear-gradient(rgb(0,0,100),rgb(255, 0, 255));
+    }
+    5%{
+        background:linear-gradient(rgb(0,0,100),rgb(245,0,245));
+    }
+    10%{
+        background:linear-gradient(rgb(0,0,100),rgb(235, 0, 235));
+    }
+    15%{
+        background:linear-gradient(rgb(0,0,100),rgb(225, 0, 225));
+    }
+    20%{
+        background:linear-gradient(rgb(0,0,100),rgb(215, 0, 215));
+    }
+    25%{
+        background:linear-gradient(rgb(0,0,100),rgb(195, 0, 195));
+    }
+    30%{
+        background:linear-gradient(rgb(0,0,100),rgb(185, 0, 185));
+    }
+    35%{
+        background:linear-gradient(rgb(0,0,100),rgb(175, 0, 175));
+    }
+    40%{
+        background:linear-gradient(rgb(0,0,100),rgb(165, 0, 165));
+    }
+    45%{
+        background:linear-gradient(rgb(0,0,100),rgb(155, 0, 155));
+    }
+    50%{
+        background:linear-gradient(rgb(0,0,100),rgb(145, 0, 145));
+    } 
+    55%{
+        background:linear-gradient(rgb(0,0,100),rgb(135, 0, 135));
+    }
+    60%{
+        background:linear-gradient(rgb(0,0,100),rgb(125, 0, 125));
+    }
+    65%{
+        background:linear-gradient(rgb(0,0,100),rgb(115, 0, 115));
+    }
+    70%{
+        background:linear-gradient(rgb(0,0,100),rgb(105, 0, 105));
+    }
+    75%{
+        background:linear-gradient(rgb(0,0,100),rgb(95, 0, 95));    
+    } 
+    80%{
+        background:linear-gradient(rgb(0,0,100),rgb(85, 0, 85));
+    }
+    85%{
+        background:linear-gradient(rgb(0,0,100),rgb(75, 0, 75));
+    }
+    90%{
+        background:linear-gradient(rgb(0,0,100),rgb(65, 0, 65));
+    }
+    95%{
+        background:linear-gradient(rgb(0,0,100),rgb(55, 0, 55));
+    }
+    100%{
+        background:linear-gradient(rgb(0,0,100),rgb(45, 0, 45));
+    }    
+}
+
+.exemplo-animacao {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #CCC;
+    animation-name: animacao;/*chamando a função da animação*/
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+}
+
+.exemplo-sombra-espaço {
+    width: 200px;
+    height: 100px;
+    padding-top: 28px;
+}
+
+.exemplo-sombra {
+    margin: auto;
+    background-color: rgb(0, 59, 16);
+    color: white;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 100px;
+    text-shadow: 0px 2px 4px rgb(26, 255, 0);
+    box-shadow: 0px 6px 10px black;
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+
+.exemplo-sombra:hover {
+    padding: 8px;
+    background-color: rgb(2, 146, 2);
+}
+
+.exemplo-quebra-de-linha {
+    border: solid 1px rgb(108, 108, 111);
+    width: 200px;
+    word-wrap: break-word;
+}
+.exemplo-sem-quebra-de-linha {
+    border: solid 1px rgb(162, 162, 250);
+    width: 200px;
+}
+
+/*Citação tag q*/
+
+q{
+    color: #666;
+    font-style: italic;
+}
+
+/*Flexbox*/
+.container-exemplo1-nav{
+    background-color: rgb(247, 144, 235);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30px;
+}
+.container-exemplo1-Logo {
+    flex: 1;
+    color: white;
+    margin: 10px;
+}
+.container-exemplo1-Opcoes {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content:space-around ;
+    background-color: aqua;
+}
+.container-exemplo1-Opcoes div {
+    color: black;
+    text-align: center;
+    width: 80px;
+    flex: 1;
+    transition: all 250ms linear;
+}
+
+.container-exemplo1-Opcoes div:hover {
+    color: white;
+    background-color: rgb(220, 128, 210);
+    cursor: pointer;
+}
+
+.container-exemplo-2 {
+    background-color: #666;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.container-exemplo-2 div {
+    border:solid 3px #ADF;
+    text-align: center;
+    background-color: rgb(229, 205, 205);
+    width: 40px;
+}

@@ -429,22 +429,140 @@
         </p>
         <h4>Tag audio</h4>
         <p>
-            <audio controls autoplay loop muted preload="auto">
+            <audio controls  loop muted preload="off"><!--autoplay-->
                 <source srct="" type="audio/mpeg,ogg,wav">
             </audio>
         </p>
 
-        <h4>Autofocus</h4>
+        <h4>Autofocus e max-length</h4>
         <p>
             É muito bom quando voce ja sabe o que o usuario vai fazer (fazer uma busca, preencher algum campo,etc).
+            <br> <br>
+            O max-legth é muito bom delimitar a quantidade de caracteres desejados.
             <br>
             <div style="background-color: darkgray; width: fit-content; padding: 10px;">
-                <input type="text" name="" id="" placeholder="Usuario" autofocus>
-                <input type="password" name="password" id="" placeholder="Senha">
+                <input type="text" name="" id="" placeholder="Usuario" ><!--autofocus-->
+                <input type="password" name="password" id="" placeholder="Senha (4 digitos)" maxlength="4">
                 <input type="submit" value="Entrar">
             </div>
         </p>
+
+        <h4>Autocomplete</h4>
+
+        <p>
+            O autocomplete é muito usado para preencher alguns campos quando salvo pelo navegador.
+            <div style="background-color: darkgray; width: fit-content; padding: 10px;">
+                <input type="text" name="" id="" placeholder="Usuario"  autocomplete="on"><!--autofocus ali dentro da tag -->
+                <input type="password" name="password" id="" placeholder="Senha (4 digitos)" maxlength="4" autocomplete="on">
+                <input type="submit" value="Entrar">
+            </div>
+        </p>
+
+        <h4>Normalize CSS</h4>
+
+        <p> É uma biblioteca para o css, ela reseta alguns elementos padrões e corrigindo alguns bugs dos navegadores.</p>
+
+        <h4>Bordas Arredondas</h4>
+
+        <div class="arredonde">
+            <p class="arredonde-conteudo">
+                É só usar o border-radius. <br> 
+                Agora tudo o que eu digitar aqui ficará no meio.
+            </p>
+        </div>
+
+        <h4>Degradê</h4>
+
+        <p>
+            Exemplo de um degradê
+        </p>
+        <div class="exemplo-degrade"></div>
+
+        <h4>Animação</h4>
+        
+        <p> Primeiro voce cria os quadros da animação numa função chamada @keyFrames e dá um nome e logo em seguida voce chama a função no objeto escolhido e escolhendo o tempo de duração, etc.</p>
+        <div class="exemplo-animacao"></div>
+
+        <h4>Sombras e transição no elemento</h4>
+
+        <div class="exemplo-sombra-espaço">
+            <div class="exemplo-sombra">Sombra no texto e na div.</div>
+        </div>
+
+        <h4> Quebra de palavra</h4>
+        <p class="exemplo-sem-quebra-de-linha">Para isso voce podeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee usar "word-wrap: break-word;"</p>
+        <p class="exemplo-quebra-de-linha">Para isso voce podeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee usar "word-wrap: break-word;"</p>
+
+        <h4>Meta tag</h4>
+        <p>
+            As tags "meta" são muito importantes quando a sua pagina é compartilhada e aquele preview que aparece do seu link com uma imagem, titulos da pagina e feita com as tags meta exemplo: <br> "&lsaquo; <strong>meta</strong> property="og:url" content="https://WWW.exemplo.com.br" &frasl;&rsaquo;" <br> Voce pode achar mais informações no facebook na área para <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiEuqih8dv8AhU2pZUCHXkpD1MQFnoECA0QAQ&url=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2F&usg=AOvVaw1Wodj1wY7330LWPM5KGNX_" target="_blank">developers</a>. 
+        </p>
+
+        <h4>Lista de descrição</h4>
+
+        <p>No mais isso faz parte da semântica do html isso ajuda os motores de busca e a navegadores com acessibilidade. <br>
+        Tags usadas para a lista:
+        <dl>
+            <dt>dt description title</dt>
+                <dd>dd description description e dl para a estrutura como se fosse uma ul e dt,dd como sua li.</dd>
+        </dl></p>
+
+
+
+        <h4>Citações</h4>
+
+        <h5>Exemplo para citação pequena:</h5>
+        <p>Como o famoso Walt Disney costumava dizer: <q>Se voce pode sonhar, voce pode fazer</q></p>
+        <h5>Exemplo para ctiações maiores:</h5>
+        <p>Uma frase inteligente de Charlie Brown Jr:
+            <blockquote cite="https://www.pensador.com/frases_inteligentes/">
+                <q>A vida me ensinou a nunca desistir. Nem ganhar, nem perder, mas procurar evoluir.</q>
+            </blockquote>
+
+        </p>
+
+        <h4>Tags : main, address, figure</h4>
+        <h5>main</h5>
+        <p>A tag main especíifica o conteúdo principal da página, tanto que só se pode ter uma na página.</p>
+        <h5>address</h5>
+        <p>Especificar informações de endereço, contato, perfis para os motores de busca para o navegador.</p>
+        <h5>figure</h5>
+        <p>
+            Utilizada geralmente quando queremos adicionar uma imagem e uma legenda.
+            <figure>
+                <img src="./image/Freda Book Image.jpg" alt="Guts" width="200px">
+                <figcaption>Guts (Berserk)</figcaption>
+            <figure>
+        </p>
+       
     </section>
 
+    <section>
+ <h2>Flexbox</h2>
+        <h3>Introdução e direções</h3>
+        <div class="container-exemplo1-nav">
+            <div class="container-exemplo1-Logo">Logo</div>
+            <div class="container-exemplo1-Opcoes">
+                <div>Opção 1</div>
+                <div>Opção 2</div>
+                <div>Opção 3</div>
+                <div>Opção 4</div>
+            </div>
+
+            
+        </div>
+
+        <div class="container-exemplo-2">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+        </div>
+
+        <h5>justify-content e align-items</h5>
+        <p>O justify: center alinha no meio horizontal e o align: center alinha no meio verticalmente.</p>
+
+
+    </section>
+    <input type="texte" name="" id="" autofocus>
 </body>
 </html>
