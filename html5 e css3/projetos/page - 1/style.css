@@ -249,6 +249,49 @@ footer .footer-copy {
     font-size: 12px;
     margin-top: 30px;
 }
+
+.container-nav-menu-mobile {
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+.mm-bar {
+    width: 40px;
+    height: 3px;
+    background-color: var(--blue1);
+}
+
+@media (max-width:1000px) {
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        left: 0;
+        position: absolute;
+        background-color: #FFF;
+        width: 100%;
+    }
+    .container-nav-logo {
+        padding: 10px;
+    }
+    header {
+        height: auto;
+
+    }
+    .container-nav-menu-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 10px;
+    }
+}
+
+
 @media (max-width:780px) {
     .banner-options {
         flex-direction: column;
@@ -279,6 +322,9 @@ footer .footer-copy {
     footer .footer-area {
         flex-direction: column;
     }
+    .footer-copy {
+        padding: 20px;
+    }
     article {
         padding: 10px;
         margin-right: 0px;
@@ -286,7 +332,31 @@ footer .footer-copy {
     .widget-title {
         margin-left: 10px;
     }
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+    .container-nav-logo {
+        padding: 10px;
+    }
+    header {
+        height: auto;
+
+    }
+  
+    .container-nav-menu-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
+
 
 @media (max-width: 625px) {
     .banner-options {
@@ -324,6 +394,19 @@ footer .footer-copy {
     }
     .widget-title {
         margin-left: 10px;
+    }
+    .footer-copy {
+        padding: 10px;
+    }
+    header .container {
+        flex-direction: row;
+    }
+    
+    .container-nav-menu-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 
 }

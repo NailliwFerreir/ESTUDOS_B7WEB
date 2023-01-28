@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bangers', cursive;
+    color: #FFF;
+    text-shadow: 3px 0px 0px #000;
+    letter-spacing: 1px;
+    transition: all 200ms linear;
+}
+:root {
+    --red-bg: #650f11;
+}
+body {
+    background-color: #000;
+}
+a {
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background: #650f11;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    box-shadow: 0px 5px 10px #000;
+}
+
+/* Home */
+header .logo img {
+    width: 130px;
+}
+header .logo, 
+header .nav-bar {
+    flex: 1;
+}
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li {
+    flex: 1;
+}
+header nav ul li a:hover {
+    font-size: 17px;
+}
+
+.trave{
+    height: 50px;
+}
+.Intro {
+    background-color:#000;
+    background-image: url("../image/miles-morales-spider-man.jpg");
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 50px);
+}
+.Intro h1 {
+    width: 500px;
+    letter-spacing: 2px;
+    padding: 40px;
+    font-size: 65px;
+    text-shadow: 6px 0px 0px #000;
+}
+.Intro h2 {
+    letter-spacing: 2px;
+    padding: 40px;
+    font-size: 58px;
+    color: #000;
+    text-shadow: 3px 0px 0px red;
+}
+/*  Sinopse */
+.Sinopse {
+    height: 440px;
+    background-color: rgb(251, 255, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../image/bg-bolinhas.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+}
+.Sinopse h1 {
+    margin-top: 40px;
+    font-size: 40px;
+    padding: 20px;
+    letter-spacing: 2px;
+    text-shadow: 5px 0px 0px blue;
+}
+   
+.sinopse-trailer {
+    margin: 40px;
+    max-width: 990px;
+    margin: 40px;
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: #000;
+    text-shadow: 2px 0px 0px red;
+
+}
+/* Trailer section */
+
+.Trailer {
+    background: linear-gradient(#000,#000,#000,#F00,#000,#000);
+    height: calc(100vh + 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Trailer h1 {
+    text-align: center;
+    width: 100%;
+    letter-spacing: 2px;
+    padding: 30px;
+    font-size: 40px;
+    background-color: #000
+}
+.container {
+    width: 990px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-trailer {
+    margin: 40px;
+    width: 990px;
+}
+.video-trailer-area {
+    position: relative;
+    height: 0px;
+    padding: 0px 0px 56.25%;/*56.25 -Proporção 16-9-*/
+}
+.video-trailer-area iframe {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+/* Final da página */
