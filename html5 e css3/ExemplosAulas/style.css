@@ -350,3 +350,124 @@ q{
     background-color: rgb(229, 205, 205);
     width: 40px;
 }
+
+
+.exemplo-primeira-letra::first-letter {
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+}
+.exemplo-primeira-linha::first-line {
+    background-color: #f0f;
+    color: #000;
+}
+.exemplo-sele-first-and-last div {
+    height: 10px;
+    width: 15px;
+    background-color: rgb(171, 196, 212);
+}
+.exemplo-sele-first-and-last div:not(div .esse-nao) {
+    width: 15px;
+    height: 30px;
+    background-color: #f0f;
+}
+.exemplo-sele-first-and-last div:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background:linear-gradient(#000,purple,#f0f);
+}
+.exemplo-sele-first-and-last div:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background:linear-gradient(#f0f,purple,black);
+
+}
+
+.exemplo-seletor-nth div:nth-child(2) {
+    background-color: #f0f;
+    color: #0FF;
+}
+.exemplo-seletor-nth div:nth-last-child(2) {
+    background-color: #f0f;
+    color: #0FF;
+}
+
+/* after e before*/
+.exemplo-before span::before {
+    content: "=>";
+    color: #f0f;
+}
+.exemplo-after span::after {
+    content: "<=";
+    color: purple;
+}
+
+.after-before-balloon {
+    background-color: #666;
+    color: #FFF;
+    padding: 20px;
+    border-radius: 20px;
+    width:fit-content ;
+}
+.after-before-balloon::after {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    border: 8px solid;
+    border-color: #666 transparent transparent transparent;
+}
+
+#input-text {
+    color: #0F0;
+}
+#input-text::placeholder {
+    color: #F0F;
+}
+.exemplo-tabela-zebra table {
+    color: #FFF;
+}
+.exemplo-tabela-zebra table tbody tr {
+    background-color: #666;
+}
+.exemplo-tabela-zebra table tbody tr:nth-child(odd) {
+    background-color: #0F0;
+}
+.exemplo-tabela-zebra table thead tr th:nth-child(odd) {
+    background-color: #F0F;
+}
+.container-tarja {
+    width: 200px;
+    height: 150px;
+    background-color: #DDD;
+}
+.tarja-de-canto {
+    transform: rotate(-45deg);
+    text-align: center;
+    position: relative;/**se colocar fixed ela fica no canto da pagina*/
+    left: -35px;
+    top: 35px;
+    width: fit-content;
+    background-color: #666;
+    padding: 3px 1px;
+}
+.tarja-de-canto a {
+    color: #FFF;
+    text-shadow: 0px 1px 3px #222;
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 1px 60px;
+    background-color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+

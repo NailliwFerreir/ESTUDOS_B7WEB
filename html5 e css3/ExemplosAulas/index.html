@@ -567,5 +567,155 @@
         <p>Entre nesse <a href="http://fap.if.usp.br/~vvuolo/A%20-%20HOME%20-%20Fisica/simbolos.htm" target="_blank">link</a></p>
     </section>
     <input type="texte" name="" id="" autofocus>
+
+
+
+
+    <section>
+        <h3>Mudar o css pelo atributo</h3>
+        <p>
+            input[type=text]
+            <br> input[name="Usuario"] Entre aspas quando o atributo têm algo não padrão
+            <br><h5>Atributo href (link)
+            </h5>
+            a[href*="palavra-chave"] {}... o "*=" faz com que o compilador procure por estes termos na url.
+            <br>
+            a[href^="https"] ... "^=" faz com que verifique o primeiro valor do link 
+            <br>
+            a[href$="procura no final do item"]
+        </p>
+        <h3>Elemento empty</h3>
+        <p>se utiliza assim: div:empty {"o que voce quiser que aconteça quando a div estiver vazia"}</p>
+    </section>
+        <h3>Seletor de primeira letra e primeira linha</h3>
+        <p class="exemplo-primeira-letra">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi asperiores hic nostrum beatae voluptatum delectus perferendis repellendus sit incidunt, dolorem porro facilis consequuntur. Repellendus amet nihil cumque ipsum saepe.
+        </p>
+        <p class="exemplo-primeira-linha">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed doloribus, quos voluptate veritatis non libero itaque eligendi autem quam cum officiis, possimus sequi reiciendis corrupti quibusdam est enim excepturi minima?
+        </p>
+        <h5>
+            obs:
+        </h5><p>os : é para o elemento div:hover{} quando são :: é para o conteúdo do elemento!</p>
+        <h3>Selecionando o primeiro e o ultimo elemento e tambem usando negação</h3>
+        <p>
+            element:first-child {}
+            element:last-child {}
+        </p>
+        <p>
+            Exemplo:
+        </p>
+        <div class="exemplo-sele-first-and-last">
+            <div></div>
+            <div></div>
+            <div class="esse-nao"></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <h3>Seletor NTH</h3>
+        <p>Exemplo:</p>
+        <div class="exemplo-seletor-nth">
+           <div>texto1</div> 
+           <div>texto2</div>
+           <div>texto3</div>
+           <div>texto4</div>
+           <div>texto5</div>
+        </div>
+        <h3>Seletor Before e After</h3>
+        <p></p>
+
+
+        <p>Exemplo Before:</p>
+        <div class="exemplo-before">
+            <span>Texto exemplo</span>
+        </div>
+        <p>Exemplo Before:</p>
+        <div class="exemplo-after">
+            <span>Texto exemplo</span>
+        </div>
+
+
+
+        <h3>Exemplo balão after/before</h3>
+        <div class="after-before-balloon">Olá, tudo bem?
+        </div>
+        <h2>Rgba</h2>
+        <p>É o controle de cores como rgb e controle do alpha ou seja a transparecia</p>
+        <div style="width: 100px;height: 40px; background-color: rgba(0,0,0,0.2);">
+            Texto de exemplo
+        </div>
+        <div style="width: 100px;height: 40px; background-color: rgba(0,0,0,0.5);color: #000;">
+            Texto de exemplo
+        </div>
+        <div style="width: 100px;height: 40px; background-color: rgba(0,0,0,0.7);">
+            Texto de exemplo
+        </div>
+        <div style="width: 100px;height: 40px; background-color: rgba(0,0,0,0.9);">
+            Texto de exemplo
+        </div>
+        <h2>Transform</h2>
+        <h3>rotate</h3>
+        <p>gira o elemento(element { transform:rotate(90deg);})</p>
+        <h3>skew</h3>
+        <p>Destorce o elemento( element { transform:skew(20deg);})</p>
+        <h3>Scale</h3>
+        <p>ele muda a escala do elemento de forma proporcional e tambem distorcida ( transform: scale(2);/*dobro do tamanho do elemento*/)</p>
+        <h2>Alterar o placeholder do input</h2>
+        <p>Exemplo no codigo</p>
+        <input type="text" name="" id="input-text" placeholder="Digite aqui">
+
+        <h2>Exemplo tabela zebra</h2>
+
+        <div class="exemplo-tabela-zebra">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <h2>Exercicio tarja de canto </h2>
+        <div class="container-tarja">
+            <div class="tarja-de-canto">
+                <a href="">Promo</a>
+            </div>
+        </div>
 </body>
 </html>
