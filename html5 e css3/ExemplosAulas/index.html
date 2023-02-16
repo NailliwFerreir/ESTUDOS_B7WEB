@@ -717,5 +717,54 @@
                 <a href="">Promo</a>
             </div>
         </div>
+        <section>
+            <h2>Grid</h2>
+            <p>O grid é uma especie de tabela resposiva</p>
+            <p>Para usar o grid basta coloca-la no display( display: grid;) de algum elemento que possua dois elementos ou mais</p>
+            <h3>Gap</h3>
+            <p>O espaçamento entre os elementos do grid é feito com o uso do gap </p>
+            <h4>grid-column-gap</h4>
+            <p>Ajusta o espaço entre as colunas do grid.</p>
+            <h4>grid-rows-gap</h4>
+            <p>Ajusta o espaço entre as linha do grip </p>
+            <h4>Grid-template-columns</h4>
+            <p>Voce pode ajustar o tamanho dos elementos do grid individualmente</p>
+            <h4>Grid-template-rowws</h4>
+            <p>Voce pode ajustar o tamanho da linha do elemento</p>
+            <h4>Frame</h4>
+            <p>Criada somente p o grid, representa uma fração do espaço disponivel no grid</p>
+            <h4>repeat</h4>
+            <p>voce pode usar para repetir o numero de frames se forem iguais</p>
+            <h4>auto-fill</h4>
+            <p>completa co frame até o preencher o tamanoh disponivel</p>
+            <h4> Minmax</h4>
+            <p>Temos o grid-auto-rows: minmax(tamanho minimo da linha, tamanho maximo que pode chegar ); para ajustar o tamanho da linha </p>
+            <h4>Aumentando e posicionamento celulas grid</h4>
+            <p>Temos duas propriedades grid-column-start/end e grid-row-start/end... em vez de colocar 4 linhas colum-start column-end row-start row-end... voce pode fazer "grid-column: começo / fim;" tem o span que serve p ficar um pouco mais entendivel q se orienta pelo espaço tomado em conteudo nao pelas linhas imaginárias.</p>
+            <h4>grid-area</h4>
+            <p>Voce pode declarar a posição e tamanho em uma propriedade só colocando "grid-area: column-start / row-start / column-end / row-end;", porém não é muito utilizado pois pode deixar o programador confuso.</p>
+            <h4>grid-template-areas</h4>
+            <p>Primeiramente voce declara um nome no elemento especifico usando o grid-area: nome;
+                <br>
+                Então no container dos elementos coloque o <br> grid-template-areas: <br>
+
+                "nome1 nome2" <br>
+                "nome3 nome3" <br>
+                "nome4 nome4" 
+                <br>
+                ; <br>
+                Isso quer dizer que são duas divs numas mesma linha ocupando o mesmo espaço e duas outras divs ocupando linhas inteiras.
+
+            </p>
+            <h5>Codigo exemplo:</h5>
+            <div class="exemplo-container-grid">
+                <header>Header</header>
+                <nav>Nav</nav>
+                <article>Article</article>
+                <footer>Footer</footer>
+            </div>
+
+
+        </section>
 </body>
 </html>

@@ -22,8 +22,8 @@ header {
     justify-content: center;
     align-items: center;
 }
-body {/*
-    overflow-x: hidden;*/
+body {
+    overflow-x: hidden;
 }
 .container {
     width: 1140px;

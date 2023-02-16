@@ -461,7 +461,42 @@ q{
 }
 
 
+.exemplo-container-grid { 
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #000;
+    width: 400px;
+    height: auto;
+    display: grid;
+    gap: 15px;
+    grid-template-areas: 
+        "header header header header"
+        "article article article nav"
+        "article article article nav"
+        "footer footer footer footer"
+    ;
 
+}
+.exemplo-container-grid header,
+.exemplo-container-grid nav,
+.exemplo-container-grid article,
+.exemplo-container-grid footer {
+    background-color: #666;
+    color: #DDD;
+    text-align: center;
+}
+.exemplo-container-grid header{
+    grid-area: header;
+}
+.exemplo-container-grid nav {
+    grid-area: nav;
+}
+.exemplo-container-grid article {
+    grid-area: article;
+}
+.exemplo-container-grid footer {
+    grid-area: footer;
+}
 
 
 
