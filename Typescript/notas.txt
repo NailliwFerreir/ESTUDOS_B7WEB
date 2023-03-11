@@ -1,0 +1,1 @@
+tsc diretorioDoArquivo.ts --noEmitOnError //Converte o arquivo para javascript, porém não o fará se estiver com o erro 
