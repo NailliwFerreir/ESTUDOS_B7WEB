@@ -5,3 +5,8 @@ dentro da pasta***
 tsc nome-do-arquivo -w //significa watchmode 
 
 qualquer alteração sera convertida automaticamente para o arquivo js
+
+tsc --init // irá criar o tsconfig que procurá em todo seu projeto arquivos ts... voce tambem pode unir os dois ultimos comandos
+
+tsc -w  //depois de ter dado o comando tsc init 
+
