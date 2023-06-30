@@ -6,6 +6,7 @@ import RestartIcon from "./svgs/restart.svg";
 import { useEffect, useState } from "react";
 import { GridItemType } from "./types/GridItemType";
 import { items } from "./data/items";
+import { GridItem } from "./components/GridItem";
 
 const App = () => {
   const [playing, setPlaying] = useState<boolean>(false);
@@ -33,7 +34,7 @@ const App = () => {
     for (let i = 0; i < 2; i++) {
       for (let j = 0; j < items.length; j++) {
         let pos = -1;
-        while (pos < 0 || tempGrid[pos].item != null) {f
+        while (pos < 0 || tempGrid[pos].item != null) {
           pos = Math.floor(Math.random() * items.length * 2);
         }
         tempGrid[pos].item = j;
@@ -62,7 +63,17 @@ const App = () => {
         />
       </C.Info>
       <C.GridArea>
-        <C.Grid />
+        <C.Grid>
+          {
+            gridItems.map((item,index) => ( 
+              <GridItem
+               key={index}
+              item={item}
+              onClick={()=>{}}
+              />
+            ))
+          }
+        </C.Grid>
       </C.GridArea>
     </C.Container>
   );

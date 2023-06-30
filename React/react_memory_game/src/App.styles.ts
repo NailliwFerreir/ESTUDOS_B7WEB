@@ -30,6 +30,7 @@ export const InfoArea = style.div``;
 export const GridArea = style.div`
     flex:1;
     display: flex;
+    justify-content: flex-end;
 `;
 
 export const Grid = style.div`
