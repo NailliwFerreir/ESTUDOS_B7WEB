@@ -1,14 +1,15 @@
 import * as C from './App.styles';
+
 type Props = {
-        label_top:string;
-        label_bottom:string;
+        label:string;
+        value:string;
     }
-const InfoItem = ({label_top,label_bottom}:Props) =>{
+const InfoItem = ({label,value}:Props) =>{
     return (
-        <>
-        <C.InfoTop>{label_top}</C.InfoTop>
-        <C.InfoBottom>{label_bottom}</C.InfoBottom>
-        </>
+        <C.Container>
+            <C.Label>{label}</C.Label>
+            <C.Value>{value}</C.Value>
+        </C.Container>
     );
 }
 

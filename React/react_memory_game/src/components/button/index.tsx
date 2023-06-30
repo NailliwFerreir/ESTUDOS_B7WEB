@@ -1,8 +1,18 @@
-import * as C from './App.styles'
+import * as C from "./App.styles";
 type Props = {
-    label : string;
-}
-const Button = ({label}:Props) =>{
-    return <C.Button>{label}</C.Button>
-}
-export default Button;
+  label: string;
+  icon?: any;
+  onClick: React.MouseEventHandler<HTMLDivElement>;
+};
+export const Button = ({ label, icon, onClick }: Props) => {
+  return (
+    <C.Container onClick={onClick}>
+      {icon && (
+        <C.IconArea>
+          <C.Icon src={icon} />
+        </C.IconArea>
+      )}
+      <C.Label>{label}</C.Label>
+    </C.Container>
+  );
+};
